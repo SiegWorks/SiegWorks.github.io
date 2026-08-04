@@ -187,8 +187,8 @@ a {
 }
 
 .product-card img {
-  width: 128px;
-  height: 128px;
+  width: 102px;
+  height: 102px;
   object-fit: contain;
   margin-bottom: 28px;
 }
@@ -283,7 +283,7 @@ a {
   }
 
   .product-card img {
-    width: 112px;
-    height: 112px;
+    width: 90px;
+    height: 90px;
   }
 }
