@@ -9,80 +9,63 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <a class="site-title" href="./">SiegWorks サポートサイト</a>
-    </div>
+    <a class="brand" href="./" aria-label="SiegWorks トップへ">SiegWorks</a>
   </header>
 
   <main>
-    <section class="notice-section">
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>SiegWorks</h1>
+        <p>Software for Better Experiences</p>
+      </div>
+    </section>
+
+    <section class="news section">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">INFORMATION</p>
-          <h1>お知らせ</h1>
-        </div>
+        <header class="section-heading">
+          <p class="section-label">NEWS</p>
+          <h2>お知らせ</h2>
+        </header>
 
-        <div class="notice-list">
-          <article class="notice-item">
+        <div class="news-list">
+          <article>
             <time datetime="2026-08-04">2026年8月4日</time>
-            <span class="notice-tag">運用案内</span>
-            <p>SiegWorks サポートサイトを準備中です。</p>
+            <p>SiegWorks サポートサイトを公開しました。</p>
           </article>
-
-          <article class="notice-item muted">
+          <article class="muted">
             <time>―</time>
-            <span class="notice-tag">更新情報</span>
-            <p>Voiconの公開情報は、準備が整い次第掲載します。</p>
+            <p>Voiconの公開情報は準備が整い次第掲載します。</p>
           </article>
-
-          <article class="notice-item muted">
+          <article class="muted">
             <time>―</time>
-            <span class="notice-tag">更新情報</span>
-            <p>DCS Localizerの公開情報は、準備が整い次第掲載します。</p>
+            <p>DCS Localizerの公開情報は準備が整い次第掲載します。</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="products-section">
+    <section class="products section">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">PRODUCT SUPPORT</p>
-          <h2>製品サポート</h2>
-        </div>
+        <header class="section-heading">
+          <p class="section-label">PRODUCTS</p>
+          <h2>Products</h2>
+        </header>
 
         <div class="product-grid">
-          <article class="product-card">
-            <div class="product-icon-placeholder" aria-label="Voiconアイコン差し替え位置">
-              <span>V</span>
-            </div>
+          <a class="product-card" href="voicon/" aria-label="Voicon サポートページへ">
+            <img src="assets/voicon.png" alt="Voicon">
             <h3>Voicon</h3>
-            <p class="product-summary">DCS World向け音声日本語化支援ツール</p>
+            <p class="version">Latest&nbsp; 1.0.0</p>
+            <p class="tagline">ゲーム音声日本語化支援ツール</p>
+          </a>
 
-            <nav class="product-actions" aria-label="Voiconサポートメニュー">
-              <a class="button primary" href="voicon/">Voicon サポート</a>
-              <a class="button" href="voicon/#download">最新版ダウンロード</a>
-              <a class="button" href="voicon/#updates">更新情報</a>
-              <a class="button" href="voicon/#manual">マニュアル</a>
-              <a class="button" href="#" aria-disabled="true">不具合報告（準備中）</a>
-            </nav>
-          </article>
-
-          <article class="product-card">
-            <div class="product-icon-placeholder" aria-label="DCS Localizerアイコン差し替え位置">
-              <span>L</span>
-            </div>
+          <a class="product-card" href="dcs-localizer/" aria-label="DCS Localizer サポートページへ">
+            <img src="assets/dcs-localizer.png" alt="DCS Localizer">
             <h3>DCS Localizer</h3>
-            <p class="product-summary">DCS World向けミッション日本語化支援ツール</p>
-
-            <nav class="product-actions" aria-label="DCS Localizerサポートメニュー">
-              <a class="button primary" href="dcs-localizer/">DCS Localizer サポート</a>
-              <a class="button" href="dcs-localizer/#download">最新版ダウンロード</a>
-              <a class="button" href="dcs-localizer/#updates">更新情報</a>
-              <a class="button" href="dcs-localizer/#manual">マニュアル</a>
-              <a class="button" href="#" aria-disabled="true">不具合報告（準備中）</a>
-            </nav>
-          </article>
+            <p class="version">Latest&nbsp; 1.0.0</p>
+            <p class="tagline">DCS日本語化支援</p>
+            <p class="description">DCSミッションの音声日本語化を効率的に支援</p>
+          </a>
         </div>
       </div>
     </section>
@@ -90,7 +73,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <nav class="legal-links" aria-label="法的情報">
+      <nav aria-label="法的情報">
         <span>利用規約（準備中）</span>
         <span>プライバシーポリシー（準備中）</span>
         <span>特定商取引法に基づく表記（準備中）</span>
