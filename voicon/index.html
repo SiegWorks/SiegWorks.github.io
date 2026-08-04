@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Voiconの最新版ダウンロード、更新情報、マニュアル、不具合報告を案内するサポートページです。">
   <title>Voicon サポート | SiegWorks</title>
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles.css?v=3">
 </head>
 <body>
   <header class="site-header product-header">
@@ -13,101 +13,104 @@
   </header>
 
   <main>
-    <section class="product-hero">
-      <div class="container product-hero-inner">
+    <section class="product-hero compact-product-hero">
+      <div class="container">
         <a class="back-link" href="../">← Productsへ戻る</a>
 
-        <img class="product-page-icon" src="../assets/voicon.png" alt="Voicon">
-        <h1>Voicon</h1>
-        <p class="product-page-tagline">ゲーム音声日本語化支援ツール</p>
-        <p class="product-page-description">
-          AI音声認識・AI翻訳・音声生成でゲーム音声の日本語化を支援
-        </p>
-      </div>
-    </section>
-
-    <section id="download" class="support-section">
-      <div class="container support-container">
-        <header class="support-heading">
-          <p class="section-label">DOWNLOAD</p>
-          <h2>最新版</h2>
-        </header>
-
-        <div class="support-panel release-panel">
+        <div class="product-summary-row">
+          <img class="product-page-icon" src="../assets/voicon.png" alt="Voicon">
           <div>
-            <span class="status-badge">公開準備中</span>
-            <h3>Voicon</h3>
-            <dl class="release-info">
-              <div>
-                <dt>バージョン</dt>
-                <dd>準備中</dd>
-              </div>
-              <div>
-                <dt>公開日</dt>
-                <dd>準備中</dd>
-              </div>
-              <div>
-                <dt>対応OS</dt>
-                <dd>Windows 10 / Windows 11</dd>
-              </div>
-            </dl>
+            <h1>Voicon</h1>
+            <p class="product-page-tagline">ゲーム音声日本語化支援ツール</p>
+            <p class="product-page-description">
+              AI音声認識・AI翻訳・音声生成でゲーム音声の日本語化を支援
+            </p>
           </div>
-
-          <span class="support-button disabled" aria-disabled="true">
-            最新版をダウンロード
-          </span>
         </div>
       </div>
     </section>
 
-    <section id="updates" class="support-section support-section-alt">
-      <div class="container support-container">
-        <header class="support-heading">
-          <p class="section-label">UPDATES</p>
-          <h2>更新情報</h2>
-        </header>
+    <section class="product-support-area">
+      <div class="container product-support-grid">
 
-        <div class="support-panel empty-panel">
-          <p>公開情報は準備が整い次第掲載します。</p>
+        <div class="support-main-column">
+          <section id="download" class="support-block">
+            <header class="support-heading">
+              <p class="section-label">DOWNLOAD</p>
+              <h2>最新版</h2>
+            </header>
+
+            <div class="support-panel release-panel vertical-release-panel">
+              <div>
+                <span class="status-badge">公開準備中</span>
+                <h3>Voicon</h3>
+
+                <dl class="release-info">
+                  <div>
+                    <dt>バージョン</dt>
+                    <dd>準備中</dd>
+                  </div>
+                  <div>
+                    <dt>公開日</dt>
+                    <dd>準備中</dd>
+                  </div>
+                  <div>
+                    <dt>対応OS</dt>
+                    <dd>Windows 10 / Windows 11</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <span class="support-button disabled full-width-button" aria-disabled="true">
+                最新版をダウンロード
+              </span>
+            </div>
+          </section>
+
+          <section id="updates" class="support-block">
+            <header class="support-heading">
+              <p class="section-label">UPDATES</p>
+              <h2>更新情報</h2>
+            </header>
+
+            <div class="support-panel empty-panel">
+              <p>公開情報は準備が整い次第掲載します。</p>
+            </div>
+          </section>
         </div>
-      </div>
-    </section>
 
-    <section id="manual" class="support-section">
-      <div class="container support-container">
-        <header class="support-heading">
-          <p class="section-label">MANUAL</p>
-          <h2>マニュアル</h2>
-        </header>
+        <aside class="support-side-column">
+          <section id="manual" class="support-block">
+            <header class="support-heading">
+              <p class="section-label">MANUAL</p>
+              <h2>マニュアル</h2>
+            </header>
 
-        <div class="support-panel action-panel">
-          <div>
-            <h3>Voicon ユーザーマニュアル</h3>
-            <p>PDFマニュアルは現在準備中です。</p>
-          </div>
-          <span class="support-button disabled" aria-disabled="true">
-            PDFマニュアルを開く
-          </span>
-        </div>
-      </div>
-    </section>
+            <div class="support-panel side-action-panel">
+              <h3>Voicon ユーザーマニュアル</h3>
+              <p>PDFマニュアルは現在準備中です。</p>
+              <span class="support-button disabled full-width-button" aria-disabled="true">
+                PDFマニュアルを開く
+              </span>
+            </div>
+          </section>
 
-    <section id="issues" class="support-section support-section-alt">
-      <div class="container support-container">
-        <header class="support-heading">
-          <p class="section-label">SUPPORT</p>
-          <h2>不具合報告</h2>
-        </header>
+          <section id="issues" class="support-block">
+            <header class="support-heading">
+              <p class="section-label">SUPPORT</p>
+              <h2>不具合報告</h2>
+            </header>
 
-        <div class="support-panel action-panel">
-          <div>
-            <h3>GitHub Issues</h3>
-            <p>不具合報告ページは現在準備中です。</p>
-          </div>
-          <span class="support-button disabled" aria-disabled="true">
-            不具合を報告する
-          </span>
-        </div>
+            <div class="support-panel side-action-panel">
+              <h3>GitHub Issues</h3>
+              <p>不具合報告ページは現在準備中です。</p>
+              <span class="support-button disabled full-width-button" aria-disabled="true">
+                不具合を報告する
+              </span>
+            </div>
+          </section>
+        </aside>
+
       </div>
     </section>
   </main>
