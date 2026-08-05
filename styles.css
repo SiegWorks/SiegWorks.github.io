@@ -760,3 +760,50 @@ a {
     font-size: 0.9rem;
   }
 }
+
+
+/* Header overlap fix */
+.site-header.unified-header {
+  position: relative;
+  inset: auto;
+  display: block;
+  min-height: 72px;
+  padding: 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.site-header.unified-header .unified-header-inner {
+  width: min(calc(100% - 40px), var(--max-width));
+  min-height: 72px;
+  margin-inline: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.site-header.unified-header .brand,
+.site-header.unified-header .main-nav {
+  position: static;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.site-header.unified-header .main-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 560px) {
+  .site-header.unified-header,
+  .site-header.unified-header .unified-header-inner {
+    min-height: 64px;
+  }
+
+  .site-header.unified-header .unified-header-inner {
+    width: min(calc(100% - 28px), var(--max-width));
+  }
+}
