@@ -706,3 +706,57 @@ a {
     padding-top: 8px;
   }
 }
+
+
+/* Unified site shell */
+.unified-header {
+  position: relative;
+}
+
+.unified-header-inner {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.main-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  color: var(--text);
+}
+
+.site-footer .legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.site-footer .legal-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-footer .legal-links a:hover {
+  color: var(--text);
+}
+
+@media (max-width: 560px) {
+  .unified-header-inner {
+    min-height: 64px;
+  }
+
+  .main-nav {
+    gap: 16px;
+    font-size: 0.9rem;
+  }
+}
