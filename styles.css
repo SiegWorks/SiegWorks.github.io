@@ -587,3 +587,122 @@ a {
 .legal-links a{color:inherit;text-decoration:none}
 .legal-links a:hover{color:var(--text)}
 @media(max-width:760px){.support-product-grid{grid-template-columns:1fr}}
+
+
+/* Legal pages */
+.legal-hero {
+  padding-block: 52px 44px;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(65, 152, 242, 0.12), transparent 34%),
+    var(--bg);
+}
+
+.legal-container {
+  max-width: 900px;
+}
+
+.legal-hero h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+}
+
+.legal-hero p {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+
+.legal-section {
+  padding-block: 64px;
+  background: var(--bg-alt);
+}
+
+.legal-document {
+  display: grid;
+  gap: 28px;
+}
+
+.legal-document section {
+  padding: 28px 30px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+
+.legal-document h2 {
+  margin: 0 0 16px;
+  font-size: 1.35rem;
+}
+
+.legal-document p {
+  margin-bottom: 12px;
+}
+
+.legal-document p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-document ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.legal-document li + li {
+  margin-top: 10px;
+}
+
+.commerce-list {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+
+.commerce-list > div {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.75fr) minmax(0, 2fr);
+  border-bottom: 1px solid var(--line);
+}
+
+.commerce-list > div:last-child {
+  border-bottom: 0;
+}
+
+.commerce-list dt,
+.commerce-list dd {
+  margin: 0;
+  padding: 20px 22px;
+}
+
+.commerce-list dt {
+  color: #c6d8eb;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.commerce-list dd a {
+  color: #8ec6ff;
+}
+
+@media (max-width: 680px) {
+  .legal-section {
+    padding-block: 48px;
+  }
+
+  .legal-document section {
+    padding: 22px 20px;
+  }
+
+  .commerce-list > div {
+    grid-template-columns: 1fr;
+  }
+
+  .commerce-list dt {
+    padding-bottom: 8px;
+  }
+
+  .commerce-list dd {
+    padding-top: 8px;
+  }
+}
