@@ -807,3 +807,14 @@ a {
     width: min(calc(100% - 28px), var(--max-width));
   }
 }
+
+
+/* Manual two-guide layout */
+.manual-guide-list {
+  display: grid;
+  gap: 18px;
+}
+
+.manual-guide-list .side-action-panel p {
+  min-height: 54px;
+}
