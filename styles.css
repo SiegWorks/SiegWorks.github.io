@@ -925,3 +925,184 @@ a {
     min-height: 0;
   }
 }
+
+
+/* Voicon introduction */
+.voicon-feature-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.voicon-feature-grid .feature-card {
+  min-height: 250px;
+}
+
+.voicon-strengths {
+  margin-top: 72px;
+}
+
+.strengths-heading {
+  margin-bottom: 26px;
+}
+
+.strengths-heading h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.strength-panel {
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background:
+    linear-gradient(145deg, rgba(65, 152, 242, 0.08), transparent 38%),
+    var(--surface);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.2);
+}
+
+.strength-panel + .strength-panel {
+  margin-top: 24px;
+}
+
+.strength-panel-heading {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.strength-panel-heading .feature-number {
+  margin: 5px 0 0;
+}
+
+.strength-panel-heading h3 {
+  margin: 0;
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
+}
+
+.strength-lead {
+  margin: 8px 0 0;
+  color: #dce9f5;
+  font-weight: 700;
+}
+
+.strength-content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px;
+  margin-top: 28px;
+}
+
+.strength-content-grid section {
+  min-width: 0;
+}
+
+.strength-content-grid h4 {
+  margin: 0 0 10px;
+  font-size: 1.08rem;
+}
+
+.strength-content-grid h4:not(:first-child) {
+  margin-top: 28px;
+}
+
+.strength-content-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.strength-content-grid p + p {
+  margin-top: 14px;
+}
+
+.pronunciation-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.pronunciation-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(8, 12, 17, 0.34);
+}
+
+.pronunciation-table th,
+.pronunciation-table td {
+  padding: 13px 15px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.pronunciation-table th {
+  color: #cde4fb;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  background: rgba(65, 152, 242, 0.08);
+}
+
+.pronunciation-table td:first-child {
+  width: 32%;
+  color: var(--text);
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.pronunciation-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.strength-note {
+  margin-top: 16px !important;
+}
+
+.license-note {
+  margin: 28px 0 0;
+  padding: 14px 16px;
+  border: 1px solid #49647f;
+  border-radius: 10px;
+  color: #c8dbed;
+  background: rgba(65, 152, 242, 0.07);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 1080px) {
+  .voicon-feature-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .strength-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .voicon-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .voicon-feature-grid .feature-card {
+    min-height: 0;
+  }
+
+  .voicon-strengths {
+    margin-top: 54px;
+  }
+
+  .strength-panel {
+    padding: 24px 20px;
+  }
+
+  .strength-panel-heading {
+    gap: 14px;
+  }
+
+  .pronunciation-table th,
+  .pronunciation-table td {
+    padding: 11px 12px;
+  }
+}

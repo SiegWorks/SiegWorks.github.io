@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Voiconの最新版ダウンロード、更新情報、マニュアル、不具合報告を案内するサポートページです。">
   <title>Voicon サポート | SiegWorks</title>
-  <link rel="stylesheet" href="../styles.css?v=8">
+  <link rel="stylesheet" href="../styles.css?v=10">
 </head>
 <body>
   <header class="site-header unified-header">
@@ -36,6 +36,172 @@
       </div>
     </section>
 
+
+    <section class="product-introduction voicon-introduction" aria-labelledby="voicon-introduction-title">
+      <div class="container">
+        <header class="introduction-heading">
+          <p class="section-label">OVERVIEW</p>
+          <h2 id="voicon-introduction-title">ゲーム音声の文字起こしから、日本語音声生成までを一括管理</h2>
+          <p>
+            Voiconは、ゲームに収録された音声を文字起こしし、AI翻訳と日本語音声生成を利用して、
+            ゲーム音声の日本語化を支援するツールです。音声認識、翻訳、音声生成までを一つの作業画面で管理でき、
+            多数の音声ファイルもまとめて処理できます。
+          </p>
+        </header>
+
+        <figure class="product-screenshot-panel">
+          <img src="../assets/screenshots/voicon-translation-editor.png" alt="Voiconの翻訳編集画面">
+          <figcaption>音声ファイルごとの文字起こし、翻訳、日本語音声生成の状態を一覧で確認できます。</figcaption>
+        </figure>
+
+        <div class="feature-grid voicon-feature-grid" aria-label="Voiconの主な機能">
+          <article class="feature-card">
+            <p class="feature-number">01</p>
+            <h3>音声認識</h3>
+            <p>faster-whisper（オープンソースソフトウェア）を利用して、ゲーム音声を文字へ変換します。</p>
+          </article>
+          <article class="feature-card">
+            <p class="feature-number">02</p>
+            <h3>AI翻訳</h3>
+            <p>複数の翻訳サービスに対応し、品質、料金、利用条件などに応じて使用するサービスを選択できます。</p>
+          </article>
+          <article class="feature-card">
+            <p class="feature-number">03</p>
+            <h3>日本語音声生成</h3>
+            <p>AivisSpeech（フリー利用可能）を利用して日本語音声を生成し、音声モデルや音声パラメータを指定できます。</p>
+          </article>
+          <article class="feature-card">
+            <p class="feature-number">04</p>
+            <h3>一括処理</h3>
+            <p>多数の音声ファイルについて、文字起こし、翻訳、日本語音声生成までをまとめて実行できます。</p>
+          </article>
+          <article class="feature-card">
+            <p class="feature-number">05</p>
+            <h3>DCS Localizer連携</h3>
+            <p>DCS Localizerから対象ミッションを開き、DCS Worldの音声日本語化作業を効率化します。</p>
+          </article>
+        </div>
+
+        <section class="voicon-strengths" aria-labelledby="voicon-strengths-title">
+          <header class="strengths-heading">
+            <p class="section-label">FEATURES</p>
+            <h2 id="voicon-strengths-title">Voiconの特長</h2>
+          </header>
+
+          <article class="strength-panel">
+            <div class="strength-panel-heading">
+              <p class="feature-number">01</p>
+              <div>
+                <h3>翻訳ロール</h3>
+                <p class="strength-lead">AIに対して、どのような方針や表現で翻訳するかを指示するための設定です。</p>
+              </div>
+            </div>
+
+            <div class="strength-content-grid">
+              <section>
+                <h4>翻訳ロールとは</h4>
+                <p>
+                  単語を置き換える辞書とは異なり、文章全体の口調、専門用語の扱い、文章の簡潔さ、
+                  会話としての自然さなどをAIへ指示できます。
+                </p>
+                <p>
+                  たとえば、軍用無線通信では、通常の会話文とは異なる簡潔な表現や、
+                  航空・戦術分野で使用される用語を維持する必要があります。
+                  翻訳ロールを使用することで、ゲームのジャンルや場面に適した翻訳方針をAIへ与えられます。
+                </p>
+              </section>
+
+              <section>
+                <h4>ユーザー独自の翻訳ロールを作成</h4>
+                <p>
+                  翻訳するゲームや用途に合わせて、ユーザー自身が翻訳ロールを作成・編集できます。
+                  作成した翻訳ロールは、翻訳ロールに対応しているAI翻訳サービスで使用できます。
+                </p>
+
+                <h4>DCS World向けプリセットを収録</h4>
+                <p>
+                  Voiconには、DCS Worldの音声翻訳を想定した翻訳ロールのプリセットを複数収録しています。
+                  DCS World特有の会話内容に合わせて翻訳方針を選択できます。
+                </p>
+              </section>
+            </div>
+          </article>
+
+          <article class="strength-panel">
+            <div class="strength-panel-heading">
+              <p class="feature-number">02</p>
+              <div>
+                <h3>読み替え辞書</h3>
+                <p class="strength-lead">翻訳時に、単語や表記を指定した日本語表記へ変換する機能です。</p>
+              </div>
+            </div>
+
+            <div class="strength-content-grid">
+              <section>
+                <h4>ユーザー独自の辞書を作成</h4>
+                <p>
+                  ユーザー自身が、ゲームや用途に合わせた読み替え辞書を作成・編集できます。
+                  固有名詞、登場人物名、地名、装備名などを登録することで、翻訳結果や読み上げ方を調整できます。
+                </p>
+
+                <h4>約3,500語のDCS World向け辞書を収録</h4>
+                <p>
+                  DCS World向けには、ゲーム内に登場すると考えられる航空機、兵器、部隊、軍事・航空用語など、
+                  約3,500語を登録した読み替え辞書を収録しています。
+                </p>
+                <p>
+                  英数字を含む兵器名、航空機名、略号、専門用語などを、
+                  日本語音声で自然に読み上げられる表記へ変換します。
+                  単純にアルファベットを一文字ずつ読むのではなく、
+                  日本語で一般的によく使われる読み方を中心に登録しています。
+                </p>
+              </section>
+
+              <section>
+                <h4>読み替え例</h4>
+                <div class="pronunciation-table-wrap">
+                  <table class="pronunciation-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">元の表記</th>
+                        <th scope="col">日本語での読み方</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>AIM-120</td>
+                        <td>エーアイエムヒャクニジュウ</td>
+                      </tr>
+                      <tr>
+                        <td>F/A-18C</td>
+                        <td>エフエージュウハチシー</td>
+                      </tr>
+                      <tr>
+                        <td>AWACS</td>
+                        <td>エーワックス</td>
+                      </tr>
+                      <tr>
+                        <td>SA-10</td>
+                        <td>エスエーテン</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="strength-note">
+                  英数字や略号をそのまま音声合成へ渡した場合に発生しやすい誤読や不自然な読み上げを抑え、
+                  ゲーム内で聞き取りやすい日本語音声を作成できます。
+                </p>
+              </section>
+            </div>
+
+            <p class="license-note">
+              ※DCS World向け読み替え辞書の利用には、DCS Localizerとのバンドルライセンスが必要です。
+            </p>
+          </article>
+        </section>
+      </div>
+    </section>
+
     <section class="product-support-area">
       <div class="container product-support-grid">
 
@@ -43,7 +209,7 @@
           <section id="download" class="support-block">
             <header class="support-heading">
               <p class="section-label">DOWNLOAD</p>
-              <section><h2>ゲーム音声日本語化支援ツール</h2><p>Voiconは、ゲームに収録された音声を文字起こしし、AI翻訳と日本語音声生成を利用して、ゲーム音声の日本語化を支援するツールです。</p><h3>主な機能</h3><ul><li>音声認識：faster-whisper（オープンソースソフトウェア）</li><li>AI翻訳：複数の翻訳サービス対応</li><li>日本語音声生成：AivisSpeech（フリー利用可能）</li><li>一括処理</li><li>DCS Localizer連携</li></ul><h2>Voiconの特長</h2><h3>翻訳ロール</h3><p><b>翻訳ロールとは、AIに対してどのような方針や表現で翻訳するかを指示するための設定です。</b></p><p>ユーザー自身が翻訳ロールを作成・編集でき、対応するAI翻訳サービスで利用できます。VoiconにはDCS World向けの翻訳ロールプリセットを複数収録しています。</p><h3>読み替え辞書</h3><p><b>読み替え辞書は、翻訳時に単語や表記を指定した日本語表記へ変換する機能です。</b></p><p>ユーザー自身が辞書を作成・編集できます。</p><h4>約3,500語のDCS World向け辞書を収録</h4><p>ゲーム内に登場すると考えられる航空機、兵器、部隊、軍事・航空用語など約3,500語を収録し、英数字を含む兵器名、航空機名、略号、専門用語などを日本語で一般的によく使われる自然な読み方へ変換します。</p><table><tr><th>元の表記</th><th>日本語での読み方</th></tr><tr><td>AIM-120</td><td>エーアイエムヒャクニジュウ</td></tr><tr><td>F/A-18C</td><td>エフエージュウハチシー</td></tr><tr><td>AWACS</td><td>エーワックス</td></tr><tr><td>SA-10</td><td>エスエーテン</td></tr></table><p><small>※DCS World向け読み替え辞書の利用には、DCS Localizerとのバンドルライセンスが必要です。</small></p></section><h2>最新版</h2>
+              <h2>最新版</h2>
             </header>
 
             <div class="support-panel release-panel vertical-release-panel">
