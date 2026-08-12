@@ -1,0 +1,28 @@
+export const STATUS_REASON_CODES = Object.freeze({
+  REFUND: "REFUND",
+  REFUND_CANCEL: "REFUND_CANCEL",
+  ABUSE: "ABUSE",
+  USER_REQUEST: "USER_REQUEST",
+  SUPPORT: "SUPPORT",
+  OPERATION_RECOVERY: "OPERATION_RECOVERY",
+  OTHER: "OTHER"
+});
+
+const ACTIVATE_REASON_CODES = new Set([
+  STATUS_REASON_CODES.REFUND_CANCEL,
+  STATUS_REASON_CODES.SUPPORT,
+  STATUS_REASON_CODES.OPERATION_RECOVERY,
+  STATUS_REASON_CODES.OTHER
+]);
+
+const SUSPEND_REASON_CODES = new Set([
+  STATUS_REASON_CODES.REFUND,
+  STATUS_REASON_CODES.ABUSE,
+  STATUS_REASON_CODES.OTHER
+]);
+
+export function isAllowedStatusReason(status, reasonCode) {
+  if (status === "active") return ACTIVATE_REASON_CODES.has(reasonCode);
+  if (status === "suspended") return SUSPEND_REASON_CODES.has(reasonCode);
+  return false;
+}
