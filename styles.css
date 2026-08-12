@@ -1106,3 +1106,31 @@ a {
     padding: 11px 12px;
   }
 }
+
+
+/* Voicon detail screenshots */
+.feature-screenshot-panel {
+  overflow: hidden;
+  margin: 28px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+
+.feature-screenshot-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #eef3f8;
+}
+
+.feature-screenshot-panel figcaption {
+  padding: 12px 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.single-detail-grid {
+  grid-template-columns: 1fr;
+}
