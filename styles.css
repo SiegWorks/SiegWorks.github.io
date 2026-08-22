@@ -1134,3 +1134,50 @@ a {
 .single-detail-grid {
   grid-template-columns: 1fr;
 }
+
+
+/* License purchase */
+.license-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.license-panel {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.license-panel h3 {
+  margin-top: 0;
+}
+
+.license-price {
+  margin: 6px 0 10px;
+  font-size: 1.05rem;
+  font-weight: 750;
+  color: var(--text);
+}
+
+.license-notes {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(23, 34, 48, 0.55);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.license-notes p {
+  margin: 3px 0;
+}
+
+@media (max-width: 760px) {
+  .license-options-grid {
+    grid-template-columns: 1fr;
+  }
+}
